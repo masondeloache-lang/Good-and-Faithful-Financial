@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Good &amp; Faithful Wealth Management</title>
+  <meta name="description" content="Goal-based financial planning for faith-driven families.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <a class="brand" href="index.html">Good &amp; <span>Faithful</span></a>
+    <div>
+      <a class="link" href="#waterfall">Savings Waterfall</a>
+      <a class="link" href="about.html">Our Approach</a>
+    </div>
+  </nav>
+
+  <!-- 1 + 2: AI-generated video, autoplay + loop on landing -->
+  <header class="hero">
+    <video autoplay muted loop playsinline preload="auto" poster="assets/poster.jpg">
+      <source src="assets/hero.mp4" type="video/mp4">
+    </video>
+    <div class="hero-inner">
+      <div class="eyebrow">Wealth planning rooted in faith</div>
+      <h1>Steward what you've been given.</h1>
+      <p class="sub">Goal-based plans for the house, the college fund, and the wedding, built around your values, with no account minimum.</p>
+      <!-- 3: button to second page -->
+      <a class="btn" href="about.html">Explore Our Approach</a>
+      <a class="btn ghost" href="#waterfall">Try the Savings Waterfall</a>
+    </div>
+  </header>
+
+  <section>
+    <div class="wrap">
+      <div class="section-title">
+        <h2>Planning that starts with your goals</h2>
+        <p>We don't pick stocks or promise to beat the market. We build the plan that gets your money working toward what matters to you.</p>
+      </div>
+      <div class="cards">
+        <div class="card"><div class="num">01</div><h3>Goal-based plans</h3><p>Home, college, weddings, retirement. Each dollar gets a job and a timeline.</p></div>
+        <div class="card"><div class="num">02</div><h3>Values-aligned investing</h3><p>Portfolios screened to reflect your convictions, with criteria you choose.</p></div>
+        <div class="card"><div class="num">03</div><h3>Tax-aware from day one</h3><p>Employer match, Roth, pre-tax, and tax-loss harvesting working together.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5: X-FACTOR: Savings Waterfall Calculator -->
+  <section class="calc" id="waterfall">
+    <div class="wrap">
+      <div class="section-title">
+        <h2>The Savings Waterfall</h2>
+        <p>See where each saved dollar should go first. Adjust the sliders and watch the plan reshape.</p>
+      </div>
+      <div class="calc-grid">
+        <div>
+          <div class="field">
+            <label for="income">Annual income</label>
+            <input type="number" id="income" value="120000" min="0" step="1000">
+          </div>
+          <div class="field">
+            <label for="rate">Savings rate <span id="rateOut">15%</span></label>
+            <input type="range" id="rate" min="1" max="40" value="15">
+          </div>
+          <div class="field">
+            <label for="match">Employer match (up to % of pay) <span id="matchOut">4%</span></label>
+            <input type="range" id="match" min="0" max="10" step="0.5" value="4">
+          </div>
+          <p class="fine">Assumes the match is a bonus on top of your own savings. Roth IRA eligibility phases out at higher incomes, where a backdoor Roth may apply.</p>
+        </div>
+        <div>
+          <div class="bar" aria-hidden="true">
+            <div class="seg s1" id="b1"></div><div class="seg s2" id="b2"></div>
+            <div class="seg s3" id="b3"></div><div class="seg s4" id="b4"></div>
+          </div>
+          <ul class="legend">
+            <li><span class="dot s1"></span><span class="lbl">1. 401(k) up to the match<small>Free money first</small></span><span class="amt" id="a1">$0</span></li>
+            <li><span class="dot s2"></span><span class="lbl">2. Roth IRA<small>Tax-free growth</small></span><span class="amt" id="a2">$0</span></li>
+            <li><span class="dot s3"></span><span class="lbl">3. Back to 401(k) (pre-tax)<small>Up to the annual limit</small></span><span class="amt" id="a3">$0</span></li>
+            <li><span class="dot s4"></span><span class="lbl">4. Taxable brokerage<small>Everything left over</small></span><span class="amt" id="a4">$0</span></li>
+          </ul>
+          <div class="total">Total saved: <strong id="tot">$0</strong> per year &nbsp;|&nbsp; Employer match: <strong id="mat">$0</strong></div>
+          <p class="fine">Educational illustration only, not personalized advice. IRS limits change yearly; limits used here are editable in script.js.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <!-- Required: X-factor description, under 50 words -->
+    <div class="xfactor">
+      <strong>X-Factor:</strong> The Savings Waterfall is an interactive calculator. Move the sliders and an animated bar shows how each saved dollar should flow: employer match first, then Roth IRA, 401(k), and brokerage.
+    </div>
+    <div class="disc">
+      Class project for illustrative purposes. Not an offer of investment advisory services. Nothing here is investment, tax, or legal advice.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="chatbot.js"></script>
+</body>
+</html>

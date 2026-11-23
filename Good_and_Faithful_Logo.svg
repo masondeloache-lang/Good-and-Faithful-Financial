@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 420" width="1300" height="420">
+  <circle cx="210" cy="210" r="190" fill="#1F3A5F"/>
+  <circle cx="210" cy="210" r="170" fill="none" stroke="#C9A24A" stroke-width="5"/>
+  <path d="M210 318 L210 168" stroke="#C9A24A" stroke-width="16" stroke-linecap="round" fill="none"/>
+  <path d="M210 232 C160 236 118 208 112 152 C166 148 206 180 210 232 Z" fill="#C9A24A"/>
+  <path d="M210 196 C262 198 306 164 312 100 C256 96 214 132 210 196 Z" fill="#C9A24A"/>
+  <path d="M150 318 Q210 296 270 318" stroke="#C9A24A" stroke-width="8" stroke-linecap="round" fill="none"/>
+  <text x="450" y="212" font-family="Lora, Georgia, serif" font-size="108" font-weight="700" fill="#1F3A5F">Good &amp; Faithful</text>
+  <text x="456" y="272" font-family="Lora, Georgia, serif" font-size="38" letter-spacing="11" fill="#1F3A5F">WEALTH MANAGEMENT</text>
+  <rect x="456" y="298" width="150" height="4" fill="#C9A24A"/>
+  <text x="456" y="352" font-family="Lora, Georgia, serif" font-size="32" font-style="italic" fill="#9A7424">One plan for your wealth, your giving and your faith</text>
+</svg>
